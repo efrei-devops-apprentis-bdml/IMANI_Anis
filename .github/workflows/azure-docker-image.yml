@@ -32,11 +32,11 @@ jobs:
           uses: 'azure/aci-deploy@v1'
           with:
             resource-group: ${{ secrets.RESOURCE_GROUP }}
-            dns-name-label: ${{ secrets.RESOURCE_GROUP }}devops-20201006
-            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/20201006:v1
+            dns-name-label: ${{ secrets.RESOURCE_GROUP }}devops-20210267
+            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/20210267:v1
             registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             environment-variables: API_KEY=${{ secrets.API_KEY }}
-            name: '20201006'
+            name: '20210267'
             location: 'france central'
